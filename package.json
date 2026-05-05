@@ -1,0 +1,20 @@
+{
+  "name": "playwright-ecommerce-enterprise-framework",
+  "version": "1.0.0",
+  "description": "Enterprise-grade end-to-end test automation framework for e-commerce applications using Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:e2e": "playwright test --grep @e2e",
+    "test:negative": "playwright test --grep @negative",
+    "install:browsers": "playwright install",
+    "report": "playwright show-report"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
