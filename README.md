@@ -21,5 +21,5 @@ This project demonstrates an enterprise-style approach to end-to-end test automa
 - Negative authentication scenarios
 
   ▶️ How to run
-  npm install
-  npx playwright test
+- npm install
+- npx playwright test
