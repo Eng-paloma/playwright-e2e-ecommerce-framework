@@ -20,6 +20,6 @@ This project demonstrates an enterprise-style approach to end-to-end test automa
 - Checkout and purchase completion
 - Negative authentication scenarios
 
-▶️ How to run
-npm install
-npx playwright test
+  ▶️ How to run
+  npm install
+  npx playwright test
