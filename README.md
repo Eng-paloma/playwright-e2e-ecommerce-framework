@@ -13,7 +13,7 @@
 - [Arquitetura](#arquitetura)
 - [Pré-requisitos](#pré-requisitos)
 - [Instalação](#instalação)
-- [Como Usar](#como-usar)
+- [Uso](#uso)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Cenários Cobertos](#cenários-cobertos)
 - [Boas Práticas](#boas-práticas)
@@ -92,7 +92,7 @@ npm install
 npx playwright install
 ```
 
-### 4. Configure as variáveis de ambiente (opcional)
+### 4. Adicionado as variáveis de ambiente (opcional)
 
 Crie um arquivo `.env` na raiz do projeto:
 
@@ -102,7 +102,7 @@ HEADLESS=true
 SLOW_MO=0
 ```
 
-## ▶️ Como Usar
+## ▶️ Uso
 
 ### Executar todos os testes
 
@@ -228,25 +228,20 @@ playwright-e2e-ecommerce-framework/
 ```typescript
 // ❌ Ruim
 cy.get('div.class-1234 > span')
-
-// ✅ Bom
-private readonly loginButton = this.page.locator('[data-testid="login-button"]');
 ```
 
 ### 2. **Use Page Objects**
 ```typescript
-// ✅ Bom
 const loginPage = new LoginPage(page);
 await loginPage.login('user@example.com', 'password123');
 ```
 
 ### 3. **Crie Business Flows**
 ```typescript
-// ✅ Bom - Abstrai detalhes técnicos
 await new PurchaseFlow(page).completePurchase(product);
 ```
 
-### 4. **Adicione logs significativos**
+### 4. **Adicionado logs significativos**
 ```typescript
 logger.info('Iniciando fluxo de login');
 logger.info('Preenchendo formulário de login');
